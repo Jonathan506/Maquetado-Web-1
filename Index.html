@@ -5,22 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ing. Blandón">
-    <meta name="description" content="Maquetado de página practica">
+    <meta name="description" content="Ing. Jonathan Blandón Paniagua Programmer and Web Developper">
     <title>Maquetación</title>
     <link rel="icon" href="/Images/agua.jpg">
     <link rel="stylesheet" href="/CSS/Styles.css" media="">
 </head>
 <body>
-    <div id="chat">Chat</div>
+    <div class="chat">Chat</div>
     <header>
-        <div class="Logo">Logo Tipo</div>
-        
-        <div id="Icono1" class="redes">x</div>
-        <div id="Icono2" class="redes">x</div>
-        <div id="Icono3" class="redes">x</div>
+        <div class="header-content">
+            <div class="logo">Logo Tipo</div>
+            <div class="div-logos">
+                <div id="Icono1" class="redes">x</div>
+                <div id="Icono2" class="redes">x</div>
+                <div id="Icono3" class="redes">x</div>
+            </div>
+        </div>
     </header>
-
-    <nav>
+    <nav class="navegation">
         <ul>
             <a href="#"><li class="botones">Boton 1</li></a>
             <a href="#"><li class="botones">Boton 2</li></a>
@@ -29,7 +31,6 @@
             <a href="#"><li class="botones">Boton 5</li></a>
         </ul>
     </nav>
-
     <div class="top">
         <ul>
             <li>
@@ -37,21 +38,18 @@
                 <h2>Titulo 1</h2>
                 <p><a href="#">Leer más</a></p>
             </li>
-
             <li>
                 <img src="/Images/Ventana.jpg" alt="Ventana de un avión" width="100">
                 <h2>Titulo 2</h2>
                 <p><a href="#">Leer más</a></p>
             </li>
-
             <li>
                 <img src="/Images/Naturaleza.jpg" alt="Imagen de la Naturaleza" width="100">
                 <h2>Titulo 3</h2>
                 <p><a href="#">Leer más</a></p>
             </li>
         </ul>
-    </div>
-        
+    </div>     
         <section>
             <aside id="Izq">
                 <ul>
@@ -70,7 +68,6 @@
             </article>
             <aside id="Der">
                 <h2>Ingreso</h2>
-
                 <form action="pagina" method="post">
                     <label for="usuario">Usuario</label>
                     <input type="text" name="usuario" id="usuario" required="true" placeholder="Nombre de usuario">
@@ -88,7 +85,6 @@
 
             </aside>
         </section>
-
         <footer>
             <small>&copy; Todos los derechos reservados 2022.</small>
         </footer>

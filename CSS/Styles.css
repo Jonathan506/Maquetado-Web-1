@@ -1,103 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 *{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
-    font-family: sans-serif;
 }
 
-#chat{
-    position: fixed;
-    width: 250px;
-    height: 40px;
-    bottom: 0;
-    right: 20px;
-    z-index: 1  ;
+.chat{
     background: magenta;
+    border-radius: 20px 20px 0 0 ;
     color: white;
-    text-align: center;
-    line-height: 40px;
+    cursor: pointer;
     font-family: 'Kaushan Script', cursive;
     font-size: 20px;
-    border-radius: 20px 20px 0 0 ;
-    cursor: pointer;
-}
-
-header{
-    position: relative;
-    margin: auto;
-    width: 1000px;
-    height: 120px;
-    /*background-color: #444;*/
-    margin-top: 20px;
-}
-
-.Logo{
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    width: 200px;
-    height: 60px;
-    /*background-color: #ccc;*/
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
     text-align: center;
+    width: 250px;
+    z-index: 10;
+}
+
+/*Inicia Header*/
+
+.header-content{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    width: 80%;
+}
+
+.logo{
     font-family: 'Kaushan Script', cursive;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 3rem;
+    text-align: center;
+    width: 200px;
+}
+
+.div-logos{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 25%;
 }
 
 .redes{
-    position: absolute;
-    width: 42px;
-    height: 42px;
     background-color: #ccc;
     border-radius: 100%;
-    text-align: center;
+    height: 42px;
     line-height: 42px;
-    color:white;
+    text-align: center;
+    width: 42px;
 }
 
 #Icono1{
-    top: 42px;
-    right: 120px;
-    background: blue;
+    background: blue; 
 }
 
 #Icono2{
-    top: 42px;
-    right: 71px;
-    background: green;
+    background: green; 
 }
+
 #Icono3{
-    top: 42px;
-    right: 20px;
     background: red;
 }
 
-nav{
-    position: relative;
-    margin: auto;
-    width: 1000px;
+/*Fin Header*/
+
+/*Inicia Barra de Navegación*/
+
+.navegation{
     height: 48px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
+    width: 80%;
+}
+
+.navegation ul{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navegation a{
+    text-decoration: none;
 }
 
 .botones{
-    float: left;
-    width: 196px;
-    margin: 0px 2px;
-    height: 48px;
-    /*background-color: #333;*/
     background: rgba(100,0,255,1);
+    color: #fff;
     font-family: 'Kaushan Script', cursive;
-    color: white;
+    padding: 20px 40px;
     text-align: center;
-    line-height: 48px;
+    width: 190px;
 }
 
-a .botones:hover{
-    background: rgba(100,0,255,.4);
+.botones:hover{
+    background: rgba(100,0,255,.8);
 }
+
+/*Fin Barra de Navegación*/
 
 .top{
     position: relative;
