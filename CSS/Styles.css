@@ -48,6 +48,7 @@
 .div-logos{
     color: #fff;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
     width: 25%;
@@ -63,11 +64,11 @@
 }
 
 #Icono1{
-    background: blue; 
+    background: blue;
 }
 
 #Icono2{
-    background: green; 
+    background: green;
 }
 
 #Icono3{
@@ -86,7 +87,7 @@
     width: 80%;
 }
 
-.navegation ul{
+.nav-ul{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -112,186 +113,174 @@
 
 /*Fin Barra de Navegación*/
 
+/*Inicio Main Content*/
+
 .top{
-    position: relative;
-    margin: auto;
-    width: 1000px;
-    height: 192px;
-    /*background-color: #888;*/
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
+    padding: 25px 10px;
+    width: 80%;
 }
 
-.top ul{
-    width: 1010px;
-    height: 192px;
+.top-ul{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
 }
 
-.top ul li{
-    float: left;
-    width: 326px;
-    height: 192px;
-    /*background-color: salmon;*/
-    margin-right: 10px;
+.list-item{
     text-align: center;
 }
 
-.top ul li img{
+.item-img{
     border-radius: 100%;
     height: 100px;
+    transition: all .5s;
 }
 
-.top ul li h2{
+.item-img:hover{
+    transform: scale(1.2);
+}
+
+.item-title{
     font-family: 'Kaushan Script', cursive;
 }
 
-.top ul li p{
-    font-size: 14px;
+.item-text{
+    font-size: 1rem;
     margin: 10px;
 }
 
-section{
-    position: relative;
-    margin: auto;
-    width: 1000px;
-    height: 453px;
-    /*background-color: #aaa;*/
+.content{
+    display: flex;
+    justify-content:space-around;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
+    width: 80%;
 }
 
-aside#Izq{
-    position: absolute;
-    left:    0;
-    top: 0;  
-    width: 200px;
-    height: 453px;
-    /*background: #333;*/
+.aside-izq{
+    padding: 15px;
+    width: 30%; 
 }
 
-aside#Izq ul li{
-    background: #aaa;  
-    padding: 10px;
-    margin: 2px 10px;
+.list-aside-izq{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aside-izq-item{
+    background: #aaa;
     list-style: square;
     list-style-position: inside;
-    text-align: center;
-    /*list-style-image: url();*/
+    margin: 5px 0px;
+    padding: 10px;
 }
 
-aside#Izq ul li a{
+.link-aside-izq{
     text-decoration: none;
 }
 
-article{
-    position: absolute;
-    left: 200px;
-    top: 0;
-    width: 600px;
-    height: 453px;
-    /*background:blue ;*/
-}
-
-article h2{
+.title-center-content{
     font-family: 'Kaushan Script', cursive;
-    font-size:40px;
-    margin: 20px;
+    font-size: 2.5rem;   
+    margin-bottom: 20px;
+    padding-left: 50px;
 }
 
-article p img{
-    float: left;
+.div-center-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-center-content{
     margin-right: 20px;
 }
 
-article p{
-    margin: 20px;
-    font-size: 14px;
-    text-align: justify;
+.text-center-content{
+    font-size: .9rem;
 }
 
-aside#Der{
-    position: absolute;
-    right: 0;
-    top: 0;  
-    width: 200px;
-    height: 453px;
-    /*background: #333;*/
+.text-content{
+    letter-spacing: .5px;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+    text-indent: 15px;
 }
 
-aside#Der h2{
-    width: 200px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
+.aside-der-title{
     background: rgba(100,0,255,1);
-    color: white;
-    margin-bottom: 5px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    text-align: center;
+    width: 200px;
 }
 
-aside#Der input{
+.inputs{
     padding: 10px;
     margin: 5px 0;
-    width: 176px;
-
+    width: 200px;
 }
 
-aside#Der input[type="text"]{
+.inputs[type="text"]{
     background-image: url(/Images/user-solid.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
 }
 
-aside#Der input[type="password"]{
+.inputs[type="password"]{
     background-image: url(/Images/key-solid.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
 }
 
-aside#Der input[type="email"]{
+.inputs[type="email"]{
     background-image: url(/Images/envelope-solid.svg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
 }
 
-aside#Der input[type="submit"]{
-    width: 200px;
+.inputs[type="submit"],
+.inputs[type="reset"]{
     background: rgba(100,0,100,5);
-    border: 0;
-    color:white;
-    font-size: 15px;
+    border: none;
+    color:#fff;
     cursor: pointer;
+    font-size: 1rem;
+    transition: all .5s;
 }
 
-aside#Der input[type="submit"]:hover{
-    background: rgba(100,0,100,.4);
+.inputs[type="submit"]:hover,
+.inputs[type="reset"]:hover
+{
+    background: rgba(100,0,100,.8);
 }
 
-aside#Der input[type="reset"]{
-    width: 200px;
-    background: rgba(100,0,100,5);
-    border: 0;
-    color:white;
-    font-size: 15px;
-    cursor: pointer;
+.inputs[type="submit"]:active,
+.inputs[type="reset"]:active{
+    transform: scale(.9);
 }
 
-aside#Der input[type="reset"]:hover{
-    background: rgba(100,0,100,.4);
-}
-
-aside#Der input[type="reset"]:active{
-    background: rgba(255,0,100,1);
-}
+/*Fin Main Content*/
 
 footer{
-    position: relative;
-    margin: 20px auto;
-    width: 1000px;
-    height: 70px;
-    /*background-color: #aaa;*/
-    text-align: center;
-    line-height: 70px;
-    color: white;
     background: rgba(100,0,255,1);
+    color: #fff;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
 }
