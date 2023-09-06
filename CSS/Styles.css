@@ -5,25 +5,47 @@
     font-family: sans-serif;
     list-style: none;
     padding: 0;
-}
-
-body{
     margin: 0;
 }
 
+body{
+    background-color: #95b8f6;
+}
+
+header{
+    background-color: #f9a59a;
+}
+
+header,
+nav,
+main,
+footer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav,
+main,
+footer{
+    background-color:#f9d99a;
+}
+
 .chat{
-    background: magenta;
-    border-radius: 20px 20px 0 0 ;
-    color: white;
+    background: #f9a59a;
+    border-radius: 20px;
+    color: #252222f5;
     cursor: pointer;
     font-family: 'Kaushan Script', cursive;
-    font-size: 20px;
-    padding: 8px;
+    font-size: 1rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 10px;
     position: fixed;
-    bottom: 0;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     text-align: center;
-    width: 250px;
+    width: 200px;
     z-index: 10;
 }
 
@@ -33,19 +55,15 @@ body{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-    width: 80%;
+    height: 100px;
+    justify-content:space-between;
 }
 
 .logo{
     font-family: 'Kaushan Script', cursive;
     font-size: 3rem;
-    text-align: center;
-    width: 200px;
+    padding-left: 50px;
+    width: 50%;
 }
 
 .div-logos{
@@ -53,7 +71,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 10px;
+    padding-right: 50px;
     width: 25%;
 }
 
@@ -80,38 +98,29 @@ body{
 
 /*Fin Header*/
 
-/*Inicia Barra de Navegación*/
-
-.navegation{
-    height: 48px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    width: 80%;
-}
-
+/*start navegation*/
 .nav-ul{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
 }
 
-.navegation a{
-    text-decoration: none;
-}
-
-.botones{
-    background: rgba(100,0,255,1);
-    color: #fff;
+.navegation_item{
+    color: #252222f5;
     font-family: 'Kaushan Script', cursive;
+    font-size: 1.2rem;
     padding: 20px 40px;
     text-align: center;
     width: 190px;
 }
 
-.botones:hover{
-    background: rgba(100,0,255,.8);
+.navegation_item:hover{
+    background: #f9a59a;
 }
 
 /*Fin Barra de Navegación*/
@@ -275,15 +284,10 @@ body{
     transform: scale(.9);
 }
 
-/*Fin Main Content*/
-
-footer{
-    background: rgba(100,0,255,1);
-    color: #fff;
-    margin: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+/*end Main Content*/
+.footer{
+    color: #252222f5;
+    padding-top: 25px;
     text-align: center;
     width: 80%;
 }
