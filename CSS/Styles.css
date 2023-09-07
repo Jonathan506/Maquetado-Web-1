@@ -8,27 +8,18 @@
     margin: 0;
 }
 
-body{
-    background-color: #95b8f6;
-}
-
-header{
-    background-color: #f9a59a;
+body{ 
+    background-color: #95b8f6
 }
 
 header,
 nav,
 main,
 footer{
-    width: 80%;
+    background-color:#f9d99a;
     margin-left: auto;
     margin-right: auto;
-}
-
-nav,
-main,
-footer{
-    background-color:#f9d99a;
+    width: 80%;
 }
 
 .chat{
@@ -55,8 +46,8 @@ footer{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    height: 100px;
     justify-content:space-between;
+    padding-bottom: 20px;
 }
 
 .logo{
@@ -101,38 +92,43 @@ footer{
 /*start navegation*/
 .nav-ul{
     align-items: center;
+    border-top: 5px solid #95b8f6;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+    justify-content: space-evenly;
     list-style: none;
 }
 
 .navegation_item{
-    color: #252222f5;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 1.2rem;
-    padding: 20px 40px;
+    padding: 20px;
     text-align: center;
+    transition: all .2s;
     width: 190px;
 }
 
-.navegation_item:hover{
-    background: #f9a59a;
+.navegation-link{
+    color: #252222f5;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all .2s;
 }
 
-/*Fin Barra de Navegación*/
+.navegation-link:hover{
+    border-bottom: 2px solid #f9a59a;
+    color: #fff;
+    padding-bottom: 10px;
+}
 
-/*Inicio Main Content*/
+/*End navegation var*/
+
+/*Start Main Content*/
 
 .top{
+    border-top: 5px solid #95b8f6;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
     padding: 25px 10px;
-    width: 80%;
 }
 
 .top-ul{
